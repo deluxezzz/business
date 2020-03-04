@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:300,400&display=swap&subset=cyrillic');
 * {padding: 0;margin: 0;border: 0;}
 *,*:before,*:after {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active {outline: none;}
@@ -68,7 +69,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .item1-wrapper__tittle {
     color: #ffffff;
-    font-family: "Gotham - Black";
+    font-family: "Lato";
     font-size: 35px;
     font-weight: 400;
     letter-spacing: -0.88px;
@@ -148,4 +149,140 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding-top: 67px;
     object-fit: cover;
     object-position: center;
+}
+
+/* ВТОРОЙ БЛОК*/
+.item2__info{
+    padding-top: 203px;
+}
+
+.title {
+    color: #394b50;
+    font-family: "Gotham - Black";
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -0.75px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle {
+    color: #394b50;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+}
+
+.columns {
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__column1, .info__column2 {
+    flex: 0 1 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row {
+    height: 160px;
+    display: flex;
+    position: relative;
+}
+
+.row .row1 {
+    position: absolute;
+    top: 0;
+    left: 86px;
+}
+
+.row__img {
+    width: 62px; 
+    text-align: center;
+}
+.row img {
+    object-fit: none;
+    object-position: top center;
+    
+}
+.row__title {
+   
+    color: #394b50;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+
+    margin-bottom: 21px;
+}
+
+.row__text {
+   
+    color: #7b7b7b;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* БЛОК С КАРТИНКОЙ И ТЕКСТОМ */
+
+.item3 {
+    display: flex;
+}
+.item3__img {
+    flex: 0 1 50%;
+    height: 623px;
+    background: url('img/item3.jpg') no-repeat;
+}
+.item3__content {
+    flex: 0 1 50%;
+    background-color: #ffc155;
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+}
+.item3__title {
+    color: #ffffff;
+    font-family: "Gotham - Black";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.75px;
+    text-align: left;
+}
+.item3__text {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 28px 0 33px;
+    }
+.item3__button {
+    width: 145px;
+    height: 46px;
+    border: 1px solid #e7ad48;
+    background-color: #ffc155;
+
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.item3__button:hover {
+    background-color: #f1642e;
+}
+
+.item4 {
+    height: 898px;
+    background-color: #e7edf3;
 }
