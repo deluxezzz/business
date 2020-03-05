@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:300,400&display=swap&subset=cyrillic');
-* {padding: 0;margin: 0;border: 0;}
-*,*:before,*:after {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active {outline: none;}
-a:focus,a:active {outline: none;}
-nav,footer,header,aside {display: block;}
-html,body {height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-box-size-adjust: 100%;}
-input,button,textarea {font-family: inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+@import "nullstyle.css";
+
+
+@font-face {
+	font-family: 'Gotham - Black';
+	src: url('fonts/ofont.ru_Gotham Pro.eot');
+	src: local('☺'), url('fonts/ofont.ru_Gotham Pro.woff') format('woff'), url('fonts/ofont.ru_Gotham Pro.ttf') format('truetype'), url('fonts/ofont.ru_Gotham Pro.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 
 .container {
     max-width: 1200px;
@@ -134,6 +131,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     box-shadow: none;
 
     margin: 0 5px;
+}
+
+.item1-wrapper__form button:hover {
+    background-color: #a54716;
 }
 
 .item1-wrapper__text {
@@ -272,7 +273,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background-color: #ffc155;
 
     color: #ffffff;
-    font-family: Lato;
+    font-family: "Lato";
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -285,4 +286,120 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .item4 {
     height: 898px;
     background-color: #e7edf3;
+}
+
+
+/* ТРИ КОРОБКИ */
+
+
+.box-wp {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    width: 391px;
+    height: 442px;
+    border: 1px solid #ccd5df;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 31px;
+}
+
+.item4__text {
+    padding: 137px 0 49px;
+}
+
+.box__title {
+    color: #818b95;
+    font-family: "Lato";
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    padding-bottom: 30px;
+}
+
+.box__price {
+    color: #ffbb42;
+    font-family: "Lato";
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.box__subprice {    
+    color: #818b95;
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 300;
+    font-variant: small-caps;
+    margin-bottom: 33px;
+}
+
+.box span {
+    background-color: #e2e9f0;
+    height: 2px;
+    width: 100%;
+    padding: 0 31px;
+}
+
+.box button {
+    margin-top: 25px;
+    width: 131px;
+    height: 42px;
+    background-color: #ffbb42;
+
+    color: #ffffff;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.box__text {
+    color: #b5bbc1;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.box-big {
+    width: 395px;
+    height: 501px;
+    background-color: #709dca;
+}
+
+.box-big .box__price {
+    color: #ffffff;
+}
+
+.box-big span {
+    background-color: #8eb8e2;
+    height: 1px;
+}
+
+.box-big .box__subprice {
+    color: #ffffff;
+}
+
+.box-big .box__title {
+    color: #ffffff;
+}
+
+.box-big .box__text {
+    color: #ffffff;
+}
+
+.box button:hover {
+    background-color: #709dca;
+    border: 1px solid #fff;
 }
